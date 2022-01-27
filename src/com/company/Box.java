@@ -37,15 +37,24 @@ public class Box {
     public void setHeight(int height) {this.height = height;}
 
 // Определить метод класса, который вычисляет объем коробки
-    public int volumeBox(Box box) {
-        return box.length * box.width * box.height;
+    public int volumeBox() {
+        return this.length * this.width * this.height;
     }
 
 // Вывести на экран объемы этих коробок
-    public void printBoxVolume(Box box) {
-        System.out.println("The volume of the " + this.toString() + " = " + volumeBox(box) + " (cm^3)"); // <имя коробки>
+    public void printBoxVolume() {
+        System.out.println("The volume of the " + this.toString() + " = " + volumeBox() + " (cm^3)"); // <имя коробки>
     }
 
     // изменить вервию Java
 
+
+    @Override
+    public String toString() {
+        return "Box{" +
+                "length=" + length +
+                ", width=" + width +
+                ", height=" + height +
+                '}';
+    }
 }

@@ -13,10 +13,10 @@ public class Main {
         Box longBox = new Box(20,3,4);
 
 // Вывести на экран объемы этих коробок
-        defaultBox.printBoxVolume(defaultBox); //?
-        smallCube.printBoxVolume(smallCube);
-        bigCube.printBoxVolume(bigCube);
-        littleBox.printBoxVolume(littleBox);
-        longBox.printBoxVolume(longBox);
+        defaultBox.printBoxVolume();
+        smallCube.printBoxVolume();
+        bigCube.printBoxVolume();
+        littleBox.printBoxVolume();
+        longBox.printBoxVolume();
     }
 }
